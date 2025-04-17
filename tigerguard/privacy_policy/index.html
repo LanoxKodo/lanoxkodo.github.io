@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="author" content="Lanox Kodo">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lanox Kodo Dev.">
+  <meta property="og:description" content="Central hub for projects of mine, ie Lanox Kodo :P">
+  <meta property="og:url" content="https://lanoxkododev.fr.to">
+  <meta property="og:site_name" content="lanoxkododev.fr.to">
+  <meta property="og:image" content="https://lanoxkododev.fr.to/images/site_icon.png">
+  <meta name="twitter:card" content="https://lanoxkododev.fr.to/images/site_icon.png">
+  <link rel="stylesheet" href="styles.css?v=1.x.x">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>LanoxKodoDev</title>
+  <script src="sideNav.js"></script>
+</head>
+
+<body>
+  <div class="pageSection">
+    <div class="bgImage"></div>
+    <div id="content">
+      <div class="header-sticky">
+        <button onclick="sideNav()" class="button buttonMenu">&#9776;</button>
+        <img src="images/LanoxDevLogo.png" width="200" height="74">
+      </div>
+      <div class="contentBlock">
+        <div class="contentFillBlock">
+          <div class="contentInnerBlock">
+            <h1 class="contentBoxTitle">TigerGuard Privacy Policy</h1>
+            <div class="contentParagraphText">
+              <h3>Last Updated: November 30, 2024</h3>
+              <p>This boring banter of a privacy notice for TigerGuard by myself [Lanox Kodo] (as "Lanox Kodo", "LanoxKodo", "me", "we", "I" "us", "our"), described how and why I might collect, store, use, and/or share ("process/handle") your information when you use TigerGuard. Usecases strictly are concerned with the use of the bot inside of Discord, which the bot is designed specifically for. For any mentions to "Guilds" and "Servers" in this page, these explictly refer to Discord Servers, the usage of both words is thanks to Discord using multple names for the same thing both in userspace and in codespace.</p>
+
+              <p>Have any questions or concerns that are not addressed below? Contact me either in my support server in Discord (link available on main page 'lanoxkododev.fr.to'). If you do not agree to the usage of how the bot handles your data, then please do not use the bot.</p>
+
+              <h3>What kind of data is collected</h3>
+              <p>The following are what TigerGuard uses and stores in some manner, all of this are explictitly as written here, the bot will never go beyond scope that it does not have to.<br><br>
+
+              - Discord User IDs<br>
+              - Discord Server IDs<br>
+              - Temporary Data</p>
+
+              <p>Below is the scope to each of the above and how each are used.</p>
+
+              <h3>Discord User IDs</h3>
+              <p>TigerGuard stores the UUID of users provided by Discord API for use in: 1) Guild-specific Leveling Systems, 2) Guild-agnostic Leveling System (to eventually supercede the Guild-specific ones), 3) Guild Poll responses for voting.</p>
+              <p>Note: For things like the guild polls and the xp systems, your UUID is not stored until you actually partake in using the bot after the associated server sets up the required opt-in features, after that, you sending a message in a channel will then set you up in the xp system if the xp system was configured, or your ID will be recorded with a vote value in the poll table which itself is a limited-time table which then will print a message into the channel where the vote was created, and after that TigerGuard will delete the associated table for that particular poll as it no longer will be utilized. The poll system is set up this way so you may switch your vote while the vote is up, but then lock the vote results and calculate the majority decision while hiding your vote the entire time unlike Discords poll system which shows who voted for what option.</p>
+              <p>TigerGuard does NOT share the UUID of users with any 3rd parties besides Discord when using their API calls.</p>
+
+              <h3>Discord Server IDs</h3>
+              <p>TigerGuard stores the UUID of servers provided by Discord API for use in: 1) Guild-specific Leveling Systems, 2) Guild Polls, 3) Guild Level Roles, which relate to the leveling system(s), 4) Opt-In data that must be specified by server admins, and also may be revoked at any time.</p>
+              <p>TigerGuard does NOT share the UUID of servers with any 3rd parties besides Discord when using their API calls.</p>
+
+              <h3>Temporary Data</h3>
+              <p>TigerGuard stores misc data that does not live permantently in the bot database. This data is can be as simple as "Yes"/"Abstain"/"Nay" vote values for guild polls. The data can also include when a user joined a call and give them xp after leaving so long as the time spent in call was 15 minutes, the data is then wiped after the xp is awarded and stored in the associated xp system.</p>
+              <p>TigerGuard does NOT share any data in this category with anyone, it strictly is blind in the sense no one ever sees it besides myself if I have to make a backend adjustment in the database itself as part of bug tracking.</p>
+
+              <h3>Overall</h3>
+              <p>As noticed above, there isn't anything that is really forced onto you, the user or server. Any data is used in a very confined way and never released for any groups beyond Discord itself for typical API usage.</p>
+              <p>If you wish to have your data removed and the bot is having trouble removing something. Please contact me either in my support server as mentioned near the start. Should there be any problems, I want to ensure you that it will be my utmost priority to work with you on an issue so requests are not ignored.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sideNavigationBase" class="sideNavigation">
+    <object type="text/html" data="navBar.html" style="width: 100%; height: 100%; border: none;"></object>
+  </div>
+</body>
